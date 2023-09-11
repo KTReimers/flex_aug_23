@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flavors of Ice Cream!</h1>
+    <p>{{flavors}}</p>
+    <table>
+        <tr>
+            <th>Flavor of Ice Cream</th>
+            <th>Person who favorited</th>
+        </tr>
+        {% for each_flavor in flavors %}
+        <tr>
+            <td>{{each_flavor.name}}</td>
+            <td>{{each_flavor.favorited}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
