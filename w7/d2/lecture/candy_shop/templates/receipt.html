@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Receipt</h1>
+        <h3>Name on Order: {{session['first_name']}} {{session['last_name']}}</h3>
+        <p>Snickers: {{session['snickers']}}</p>
+        <p>Milkyway: {{session['milkyway']}}</p>
+        <p>Butterfinger: {{session['butterfinger']}}</p>
+        <p>Hershey's Almond: {{session['hersheys_almond']}}</p>
+        <p>Total: {{session['total']}}</p>
+        <p>Receipt sent to: {{session['email']}}</p>
+    </div>
+</body>
+</html>

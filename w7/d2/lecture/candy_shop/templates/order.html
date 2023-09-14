@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Candy Here</h1>
+        <form action="/order/process" method="POST">
+            <div class="form_input">
+                <label>Snickers:</label>
+                <input type="number" name="snickers">
+            </div>
+            <div class="form_input">
+                <label>Milkyway:</label>
+                <input type="number" name="milkyway">
+            </div>
+            <div class="form_input">
+                <label>Butterfinger:</label>
+                <input type="number" name="butterfinger">
+            </div>
+            <div class="form_input">
+                <label>Hershey's Almond:</label>
+                <input type="number" name="hersheys_almond">
+            </div>
+            <input type="submit" value="place order">
+        </form>
+    </div>
+</body>
+</html>
